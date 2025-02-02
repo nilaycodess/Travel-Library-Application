@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="429dp"
+        android:layout_height="744dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/italyaresm2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="380dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="18dp"
+        android:background="#C78E8E"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/bottom_bar" />
+
+    <EditText
+        android:id="@+id/txtyeradi"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="#00D1A1A1"
+        android:ems="10"
+        android:hint="Yer Adı"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="FOTOĞRAF YÜKLE"
+        android:textColor="#000000"
+        android:textColorHighlight="#801F1F"
+        android:textColorHint="#311F1F"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="337dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/galeri" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="370dp"
+        android:layout_height="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
+
+    <EditText
+        android:id="@+id/txtaciklama"
+        android:layout_width="302dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Açıklama"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtaciklama">
+
+        <Button
+            android:id="@+id/btnkaydet"
+            android:layout_width="167dp"
+            android:layout_height="57dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#B35353"
+            android:text="Kaydet" />
+
+        <Button
+            android:id="@+id/anasayfadon"
+            android:layout_width="167dp"
+            android:layout_height="57dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#B35353"
+            android:text="Anasayfa Dön" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
